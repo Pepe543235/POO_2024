@@ -14,4 +14,3 @@ estatura=input("Estatura: ")
 
 print(f".... ::: Datos del alumno ::: .... \n Nombre: {nombre} \n Matricula: {matricula} \n Especialidad:
        {especialidad} \n Edad: {edad} \n Estatura: {estatura}")
-"cambios extraños"
