@@ -1,4 +1,4 @@
-contador=0
-while contador<20:
-    contador=contador+2
-    print(contador)
+n=0
+for n in range(1,21):
+    if (n % 2) == 0:
+        print(n)
