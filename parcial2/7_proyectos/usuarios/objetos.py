@@ -7,4 +7,4 @@ cliente1.info_usuario()
 
 print("Objeto 2")
 empleado1=Empleados("Daniel Fuentes Loara","Fracc. Alamedas 1300 nte",6183335578,"1200.90",123,"A")
-empleados.info_usuario()
+empleado1.info_usuario()

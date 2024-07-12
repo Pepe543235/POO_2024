@@ -30,10 +30,10 @@ class Usuarios:
 class Clientes(Usuarios):
     def __init__(self,nombre,direccion,tel,num_cliente):
         super().__init__(nombre,direccion,tel) 
-        __self.num_cliente=num_cliente
+        self.__num_cliente=num_cliente
 
     def info_usuario(self):
-        print(f"Numero del cliente: {self.getNum_cliente()} / El nombre del cliente es: {self.getNombre()}, su direccion es: {self.getDireccion()}, y su telefono es: {self.getTel()}") 
+        print(f"Numero del cliente: {self.getNum_Cliente()} / El nombre del cliente es: {self.getNombre()}, su direccion es: {self.getDireccion()}, y su telefono es: {self.getTel()}") 
 
     def getNum_Cliente(self):
         return self.__num_cliente
@@ -44,9 +44,9 @@ class Clientes(Usuarios):
 class Empleados(Usuarios):
     def __init__(self,nombre,direccion,tel,salario,num_empleado,tipo):
         super().__init__(nombre,direccion,tel) 
-        _self.salario=salario
-        _self.num_empleado=num_empleado
-        _self.tipo=tipo
+        self._salario=salario
+        self._num_empleado=num_empleado
+        self._tipo=tipo
 
     def info_usuario(self):
         print(f"Numero del empleado: {self.getNum_Empleado()} / El nombre del empleado es: {self.getNombre()}, su direccion es: {self.getDireccion()}, su salario es: {self.getSalario()}, su tipo es: {self.getTipo()}") 

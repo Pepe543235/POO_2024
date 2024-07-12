@@ -39,7 +39,7 @@ class Coches:
     __privado_atributo="Soy un atributo privado"
 
     def getPrivadoAtributo(self):
-    return self.__privado_atributo
+        return self.__privado_atributo
 
     #Metodo privado
 
@@ -100,15 +100,15 @@ class Coches:
 
 
 class Camiones(Coches):
-  def __init__(self,color,marca,modelo,velocidad,caballaje,plazas):
+  def __init__(self,color,marca,modelo,velocidad,caballaje,plazas,eje,capacidadCarga):
     super().__init__(color,marca,modelo,velocidad,caballaje,plazas) 
-    __self.eje=eje
-    __self.capacidadCarga=capacidadCarga
+    self.__eje=eje
+    self.__capacidadCarga=capacidadCarga
 
 
   __tipo_carga=""
   def cargar(self,tipo_carga):
-    self-__tipo_carga=tipo_carga
+    self.__tipo_carga=tipo_carga
     return self.__tipo_carga
 
   def getEje(self):
@@ -128,7 +128,7 @@ class Camiones(Coches):
 
 
 class Camionetas(Coches):
-  def __init__(self,color,marca,modelo,velocidad,caballaje,plazas):
+  def __init__(self,color,marca,modelo,velocidad,caballaje,plazas,traccion,cerrada):
     super().__init__(color,marca,modelo,velocidad,caballaje,plazas)
     self.traccion=traccion
     self.cerrada=cerrada
@@ -136,7 +136,7 @@ class Camionetas(Coches):
 
   __num_pasajeros=""
   def transportar(self,num_pasajeros):
-    self-__num_pasajeros=num_pasajeros
+    self.__num_pasajeros=num_pasajeros
     return self.__num_pasajeros
 
   def getTraccion(self):
